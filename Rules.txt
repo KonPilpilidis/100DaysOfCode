@@ -1,0 +1,9 @@
+100 Days of Code Challenge
+---------------------------
+0. Commit by tweeting that you are taking the challenge.
+1. Code every day for 100 days for an hour.
+2. You are allowed to miss one day of coding every two weeks.
+2a.You are not allowed to miss two days in the row.
+2b.Add the missed days at the end of the hundred days.
+3. Watching videos / reading books or planning the project does not count in the one hour.
+4. Tweet every day what you did that day.
