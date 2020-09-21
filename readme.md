@@ -2,33 +2,18 @@
 
 <!-- [![Konstantinos Pilpilidis](https://avatars1.githubusercontent.com/u/71609885?s=400&u=c8c17cdd60c197a1003b0ae128c86069952caa4e)](http://pilpilidis.de) -->
 
-***INSERT GRAPHIC HERE (include hyperlink in image)***
+# The platform: the game
 
-# The hole: Spontaneous cooperation
-
-> A python game based on the movie the Hole and an AI that tries to find the optimal strategy under the conditions of the hole
+> A python game based on the movie the Platform and an AI trying to find the optimal strategy to survive the platform.
 
 
 [![Generic badge](https://img.shields.io/badge/Finished-No-red.svg)](https://shields.io/)
 [![Generic badge](https://img.shields.io/badge/Version-0.0-green.svg)](https://shields.io/)
 
-> GIF Tools
-
-- Use <a href="http://recordit.co/" target="_blank">**Recordit**</a> to create quicks screencasts of your desktop and export them as `GIF`s.
-- For terminal sessions, there's <a href="https://github.com/chjj/ttystudio" target="_blank">**ttystudio**</a> which also supports exporting `GIF`s.
-
-**Recordit**
-
-![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
-
-**ttystudio**
-
-![ttystudio GIF](https://raw.githubusercontent.com/chjj/ttystudio/master/img/example.gif)
-
 ---
 
 ## Table of Contents
-
+- [Rules of the game](#rules)
 - [Features](#features)
 - [FAQ](#faq)
 - [Support](#support)
@@ -56,7 +41,25 @@ $ bower install
 - For all the possible languages that support syntax highlithing on GitHub (which is basically all of them), refer <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">here</a>.
 
 ---
-
+## Rules 
+- General rules
+    1. The game lasts 360 days.
+    1. Every 30 days, the inmates change a floor.
+    1. An inmate gets a new inmate if the old inmate dies, when he/she changes the floor.
+- The platform
+    1. Every day, it is filled with food containing enough calories for all inmates.
+    1. It drives from the top of the structure to the bottom and stops at each floor.
+    1. Inmates can only eat but not store food.
+- Inmates
+    1. Inmates stay for 360 days or until they die.
+    1. Inmates have a personal item with them.
+        1. The item can be food.
+        1. The item can be a weapon.
+    1. All inmates can eat as much as they want from the available food.
+        1. Inmates can eat other inmates.
+        1. Inmates can starve to death but water is provided.
+    1. If an inmate dies, a new inmate comes at the end of the month.
+ 
 ## Features
 ## Usage (Optional)
 ## Documentation (Optional)
@@ -65,29 +68,6 @@ $ bower install
 - Going into more detail on code and technologies used
 - I utilized this nifty <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a> for this sample `README`.
 
----
-
-## Contributing
-
-> To get started...
-
-### Step 1
-
-- **Option 1**
-    - 🍴 Fork this repo!
-
-- **Option 2**
-    - 👯 Clone this repo to your local machine using `https://github.com/joanaz/HireDot2.git`
-
-### Step 2
-
-- **HACK AWAY!** 🔨🔨🔨
-
-### Step 3
-
-- 🔃 Create a new pull request using <a href="https://github.com/joanaz/HireDot2/compare/" target="_blank">`https://github.com/joanaz/HireDot2/compare/`</a>.
-
----
 
 ## FAQ
 
