@@ -1,7 +1,9 @@
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+### This is the main executable file for the game the Platform. ###
+# General parameters
+FLOORS = 333
+CELLS = 2
+def start(floors=FLOORS,cells=CELLS):
+    """This function populates the hole."""
 
 
 # Press the green button in the gutter to run the script.
