@@ -72,6 +72,10 @@ FLOORS = 333
 CELLS = 2
 TOTAL = 360
 CYCLE = 30
+b_hei = (1.30, 2.20)
+b_wei = (40, 250)
+b_bmi = (11, 41)
+b_age = (18, 65)
 
 def start(floors=FLOORS,cells=CELLS,time=TOTAL,change=CYCLE):
     """This function populates the hole.
