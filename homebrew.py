@@ -1,7 +1,7 @@
-## This packege contains usefull homebrew functions
-logging.config.fileConfig(".gitignore/auxiliary.log")
+from random import gauss
+import logging
 logger = logging.getLogger('auxiliary')
-
+## This packege contains usefull homebrew functions
 def randtrunc(a=None,b=None,mu=0.0,sd=1.0):
     """
     Returns a random value following a normal distribution between a and b with a mean of mu and a standard deviation of sd.
@@ -49,21 +49,20 @@ def randtrunc(a=None,b=None,mu=0.0,sd=1.0):
         logger.debug("Method randtrunc - both sides truncated")
     if sd == 0:
         return mu
-    num = random.gauss(mu,sd)
+    num = gauss(mu,sd)
     while num <= a or num >= b:
-        num = random.gauss(mu,sd)
+        num = gauss(mu,sd)
     logger.info("Randtrunc(a={},b={},mu={},sd={})={}".format(a,b,mu,sd,num))
     return num
 
-def control(variablelist):
+def notInt(variable):
     """
     The method takes a list of variables and converts them to integers by rounding the number
     :return variablelist:
     """
-    for i in range(len(variablelist)):
-        if type(variablelist[i]) == float:
-            variablelist[i] = round(variablelist[i])
-            logger.debug("Initialization - Arg:{} was recasted to int".format(1+i))
-        else:
-            pass
-    return variablelist
+    try:
+        if type(variable) == float:
+            logger.debug("Initialization - {} was recasted to int".format(variable))
+        return round(variable)
+    except ValueError:
+        logger.exception("Initialization - {} wrong type of input".format(variable))
